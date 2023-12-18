@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.decipherone.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_encode"
+        android:name="com.example.decipherone.ui.encode.EncodeFragment"
+        android:label="@string/title_encode"
+        tools:layout="@layout/fragment_encode" />
+
+    <fragment
+        android:id="@+id/navigation_decode"
+        android:name="com.example.decipherone.ui.decode.DecodeFragment"
+        android:label="@string/title_decode"
+        tools:layout="@layout/fragment_decode" />
+</navigation>

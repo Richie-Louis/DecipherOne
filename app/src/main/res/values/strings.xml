@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Decipher One</string>
+    <string name="title_home">Home</string>
+    <string name="title_encode">Encode</string>
+    <string name="title_decode">Decode</string>
+    <string name="title">Decipher One</string>
+    <string name="header">Welcome User!\nPlease enter the key \nthen make a selection</string>
+    <string name="key">Key:</string>
+    <string name="encode">Enter a message \nto encode or \nselect copy</string>
+    <string name="decode">Enter a message \nto decode or \nselect copy</string>
+    <string name="input">Input</string>
+    <string name="output">Output</string>
+</resources>

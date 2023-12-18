@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/adobestock_276396159_preview"
+    tools:context=".ui.decode.DecodeFragment">
+
+    <TextView
+        android:id="@+id/decodeTextView"
+        android:layout_width="236dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/decode"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/decodeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/decodeText"
+        android:layout_width="332dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="86dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/decodeTextView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decodeTextView" />
+
+    <TextView
+        android:id="@+id/decodeTextView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="171dp"
+        android:text="@string/output"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decodeText" />
+
+    <Button
+        android:id="@+id/decodeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="12dp"
+        android:text="Decode"
+        app:layout_constraintStart_toStartOf="@+id/decodeText"
+        app:layout_constraintTop_toBottomOf="@+id/decodeText" />
+
+    <Button
+        android:id="@+id/clearDecodeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="11dp"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="@+id/decodeText"
+        app:layout_constraintTop_toBottomOf="@+id/decodeText" />
+
+    <Button
+        android:id="@+id/copyDecodeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="26dp"
+        android:text="Copy"
+        app:layout_constraintBottom_toTopOf="@+id/decodeTextView2"
+        app:layout_constraintEnd_toStartOf="@+id/clearDecodeButton"
+        app:layout_constraintStart_toEndOf="@+id/decodeButton"
+        app:layout_constraintTop_toBottomOf="@+id/decodeText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
